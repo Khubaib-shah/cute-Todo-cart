@@ -4,11 +4,7 @@ window.addEventListener("load", () => {
   }
 });
 
-// Import the functions you need from the SDKs you need
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 import {
   getAuth,
   signInWithEmailAndPassword,
@@ -35,7 +31,7 @@ const database = getDatabase(app);
 const auth = getAuth();
 const loginBTN = document.querySelector("#loginBTN");
 loginBTN.addEventListener("click", async (event) => {
-  event.preventDefault(); 
+  event.preventDefault();
 
   const email = document.querySelector("#email").value;
   const password = document.querySelector("#password").value;
@@ -48,7 +44,7 @@ loginBTN.addEventListener("click", async (event) => {
       password
     );
     const user = userCredential.user;
-    console.log(user)
+    console.log(user);
 
     const dt = new Date();
 

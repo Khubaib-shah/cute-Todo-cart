@@ -4,10 +4,7 @@ window.addEventListener("load", () => {
   }
 });
 
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -17,7 +14,7 @@ import {
   ref,
   getDatabase,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js";
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyCNaqEsns-F6hyNiJHdSx2w-hmil_uqJ8s",
   authDomain: "realtime-database-f0288.firebaseapp.com",
@@ -28,7 +25,7 @@ const firebaseConfig = {
   messagingSenderId: "851282000884",
   appId: "1:851282000884:web:2301363a4344be66f097a1",
 };
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
