@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Page</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo"><img src="../logo.png" alt="" /></div>
+      <div class="link">
+        <a href="#" class="active">HOME</a>
+      </div>
+      <div class="links">
+        <button><a href="./signUp.html" class="active">Sign UP</a></button>
+      </div>
+    </nav>
+    <form class="container">
+      <img src="../Gif Kawaii.gif" alt="" />
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your Email..."
+        autocomplete="username"
+        required
+      />
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your Password..."
+        autocomplete="current-password"
+        required
+      />
+      <p>Don't have an Account → <a href="./signUp.html">Sign up</a></p>
+      <button id="loginBTN">Login</button>
+    </form>
+  </body>
+  <script type="module" src="../javaScript/login.js"></script>
+</html>
